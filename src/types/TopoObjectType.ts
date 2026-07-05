@@ -1,0 +1,16 @@
+export type TopoObjectType =
+  | "artifact"
+  | "place"
+  | "building"
+  | "room"
+  | "product"
+  | "component"
+  | "person"
+  | "organization"
+  | "event"
+  | "collection"
+  | "document"
+  | "story"
+  | "scene"
+  | "vehicle"
+  | "digital-twin-entity";
