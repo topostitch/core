@@ -1,5 +1,5 @@
-import type { TopoObject } from "../types/topo-object";
-import type { TopoRepresentation } from "../types/topo-representation";
+import type { TopoObject } from "../types/TopoObject";
+import type { TopoRepresentation } from "../types/TopoRepresentation";
 
 export interface SmithsonianIngestOptions {
   representations?: TopoRepresentation[];
