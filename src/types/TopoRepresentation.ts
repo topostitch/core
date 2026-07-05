@@ -5,4 +5,5 @@ export interface TopoRepresentation {
   src?: string;
   poster?: string;
   label?: string;
+  ar?: boolean;
 }
