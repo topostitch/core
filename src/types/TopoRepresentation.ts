@@ -1,9 +1,27 @@
+export type TopoRepresentationType =
+  | "model"
+  | "image"
+  | "video"
+  | "audio"
+  | "document"
+  | "map"
+  | "iiif"
+  | "other";
+
+export type TopoRepresentationCapability =
+  | "ar"
+  | "xr"
+  | "download"
+  | "embed"
+  | "annotations";
+
 export interface TopoRepresentation {
   id: string;
-  type: "model" | "image" | "video" | "audio" | "document" | "map" | "other";
+  type: TopoRepresentationType;
   format?: string;
-  src?: string;
-  poster?: string;
+  uri?: string;
+  previewUri?: string;
   label?: string;
-  ar?: boolean;
+  accessibilityLabel?: string;
+  capabilities?: TopoRepresentationCapability[];
 }
